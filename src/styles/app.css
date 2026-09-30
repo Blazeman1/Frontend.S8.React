@@ -1,0 +1,120 @@
+/* =========================================================
+   GameZone - Semana 8 (React)
+   Estilos propios, importados en main.jsx DESPUÉS de Bootstrap
+   para poder sobrescribirlo puntualmente y mantener la identidad
+   visual de GameZone entre semanas del proyecto.
+   ========================================================= */
+
+:root {
+  --gz-primario: #6f1ab8;
+  --gz-primario-oscuro: #4b0f80;
+  --gz-acento: #ffc107;
+  --gz-oferta: #ff6b6b;
+  --gz-exito: #198754;
+}
+
+body {
+  background-color: #16181d;
+}
+
+.bg-primary-gz {
+  background: linear-gradient(90deg, var(--gz-primario-oscuro), var(--gz-primario));
+}
+
+/* ---------- Tarjetas de producto ---------- */
+.producto-card {
+  overflow: hidden;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+.producto-card:hover,
+.producto-card:focus-within {
+  transform: translateY(-4px);
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.35);
+}
+
+.producto-imagen img {
+  display: block;
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+/* Estilos condicionales aplicados desde React según el estado del producto */
+.producto-card.en-carrito {
+  border-color: var(--gz-exito);
+  box-shadow: 0 0 0 1px var(--gz-exito);
+}
+.producto-card.agotado .producto-imagen img {
+  filter: grayscale(1) brightness(0.6);
+}
+
+/* Vista "lista": imagen a la izquierda y contenido a la derecha (desde 576px) */
+@media (min-width: 576px) {
+  .catalogo-lista .producto-imagen {
+    flex: 0 0 240px;
+  }
+  .catalogo-lista .producto-imagen img {
+    height: 100%;
+    min-height: 200px;
+  }
+}
+
+.badge-oferta {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  font-size: 0.75rem;
+}
+.badge-estado {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  font-size: 0.75rem;
+}
+
+.precio-normal {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--gz-acento);
+}
+.precio-anterior {
+  text-decoration: line-through;
+  color: var(--bs-secondary-color);
+  font-size: 0.9rem;
+}
+.precio-oferta {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--gz-oferta);
+}
+
+/* Esqueleto de carga */
+.skeleton-imagen {
+  height: 190px;
+}
+
+/* ---------- Carrito ---------- */
+/* sticky-lg-top va en el <aside> (hijo directo de la columna) para que el
+   carrito acompañe el scroll en escritorio; top deja espacio a la navbar fija. */
+.carrito-panel {
+  top: 5rem;
+  z-index: 1;
+}
+.carrito-card .card-header {
+  background: var(--gz-primario-oscuro);
+  color: #fff;
+}
+.item-carrito {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  background: transparent;
+}
+.item-carrito .nombre-item {
+  font-weight: 600;
+}
+.cantidad-item {
+  min-width: 2.25rem;
+  opacity: 1 !important;
+}
