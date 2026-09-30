@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "nombre": "Reinos Olvidados",
+    "categoria": "videojuegos",
+    "precioNormal": 34990,
+    "precioOferta": 27990,
+    "genero": "RPG de fantasía",
+    "descripcion": "Explora un vasto mundo abierto lleno de reinos en ruinas y criaturas legendarias.",
+    "imagen": "img/juego1.jpg",
+    "stock": 12
+  },
+  {
+    "id": 2,
+    "nombre": "Sombra Silenciosa",
+    "categoria": "videojuegos",
+    "precioNormal": 29990,
+    "precioOferta": null,
+    "genero": "Sigilo / Acción",
+    "descripcion": "Un thriller de infiltración donde cada sonido cuenta para completar misiones sin ser detectado.",
+    "imagen": "img/juego2.jpg",
+    "stock": 8
+  },
+  {
+    "id": 3,
+    "nombre": "Velocidad Extrema",
+    "categoria": "videojuegos",
+    "precioNormal": 27990,
+    "precioOferta": 22990,
+    "genero": "Carreras",
+    "descripcion": "Circuitos urbanos y autos personalizables para carreras multijugador a toda velocidad.",
+    "imagen": "img/juego3.jpg",
+    "stock": 15
+  },
+  {
+    "id": 4,
+    "nombre": "Galaxia Infinita",
+    "categoria": "videojuegos",
+    "precioNormal": 32990,
+    "precioOferta": null,
+    "genero": "Ciencia ficción / Estrategia",
+    "descripcion": "Construye tu flota y coloniza planetas en este épico título de estrategia espacial.",
+    "imagen": "img/juego4.jpg",
+    "stock": 6
+  },
+  {
+    "id": 5,
+    "nombre": "Consola GZ One",
+    "categoria": "consolas",
+    "precioNormal": 349990,
+    "precioOferta": 299990,
+    "genero": "Consola de sobremesa",
+    "descripcion": "Potencia de nueva generación con 1TB de almacenamiento y soporte 4K.",
+    "imagen": "img/consola1.jpg",
+    "stock": 4
+  },
+  {
+    "id": 6,
+    "nombre": "Consola GZ Portátil",
+    "categoria": "consolas",
+    "precioNormal": 259990,
+    "precioOferta": null,
+    "genero": "Consola portátil",
+    "descripcion": "Juega donde quieras con pantalla OLED de 7 pulgadas y hasta 10 horas de batería.",
+    "imagen": "img/consola2.jpg",
+    "stock": 0
+  },
+  {
+    "id": 7,
+    "nombre": "Control Inalámbrico GZ",
+    "categoria": "accesorios",
+    "precioNormal": 39990,
+    "precioOferta": 32990,
+    "genero": "Accesorio",
+    "descripcion": "Ergonomía mejorada, vibración háptica y batería recargable de larga duración.",
+    "imagen": "img/control.jpg",
+    "stock": 20
+  },
+  {
+    "id": 8,
+    "nombre": "Headset Gamer GZ Surround",
+    "categoria": "accesorios",
+    "precioNormal": 44990,
+    "precioOferta": null,
+    "genero": "Accesorio",
+    "descripcion": "Audio envolvente 7.1 y micrófono con cancelación de ruido para sesiones largas.",
+    "imagen": "img/headset.jpg",
+    "stock": 10
+  },
+  {
+    "id": 9,
+    "nombre": "Silla Gamer GZ Comfort",
+    "categoria": "accesorios",
+    "precioNormal": 129990,
+    "precioOferta": 109990,
+    "genero": "Accesorio",
+    "descripcion": "Soporte lumbar ajustable y reclinación de hasta 165° para máxima comodidad.",
+    "imagen": "img/silla.jpg",
+    "stock": 2
+  }
+]
